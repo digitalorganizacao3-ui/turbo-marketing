@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Turbo Marketing — Especialistas em IA & Automações para empresas. Reduza custos, escale operações e transforme seu negócio com inteligência artificial." />
+  <meta name="keywords" content="IA, automação, chatbot, tráfego pago, consultoria, inteligência artificial, marketing digital" />
+  <meta property="og:title" content="Turbo Marketing — IA & Automações para Empresas" />
+  <meta property="og:description" content="Especialistas em IA e automações que transformam operações empresariais. +200 automações entregues, 60% de redução de custos." />
+  <meta property="og:type" content="website" />
+  <title>Turbo Marketing — IA & Automações para Empresas</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========================
+       HEADER FIXO
+  ======================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+      <a href="#hero" class="header__logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">TURBO <span class="logo-accent">MARKETING</span></span>
+      </a>
+
+      <nav class="header__nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="#cases" class="nav__link">Cases</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contato" class="btn btn--cyan header__cta">Fale Conosco</a>
+
+      <!-- Hambúrguer -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========================
+         HERO
+    ======================== -->
+    <section class="hero" id="hero">
+      <!-- Canvas para o elemento geométrico animado -->
+      <canvas class="hero__canvas" id="heroCanvas"></canvas>
+
+      <div class="container hero__content">
+        <div class="hero__badge fade-in">⚡ Inteligência Artificial Aplicada</div>
+
+        <h1 class="hero__headline fade-in">
+          Automatize seu negócio.<br />
+          <span class="text-cyan">Escale sem limites.</span>
+        </h1>
+
+        <p class="hero__sub fade-in">
+          Implementamos IA e automações que eliminam tarefas repetitivas, reduzem custos em até
+          <strong>60%</strong> e entregam resultados em <strong>30 dias</strong>.
+        </p>
+
+        <div class="hero__actions fade-in">
+          <a href="#contato" class="btn btn--cyan btn--lg">Quero Automatizar Agora</a>
+          <a href="#servicos" class="btn btn--outline btn--lg">Ver Serviços</a>
+        </div>
+
+        <div class="hero__stats fade-in">
+          <div class="hero__stat">
+            <strong>+200</strong>
+            <span>Automações entregues</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <strong>60%</strong>
+            <span>Redução de custos</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <strong>30 dias</strong>
+            <span>Para implementar</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         SERVIÇOS
+    ======================== -->
+    <section class="services" id="servicos">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="section-tag">O que fazemos</span>
+          <h2 class="section-title">Soluções de IA para <span class="text-blue">cada desafio</span></h2>
+          <p class="section-sub">Combinamos tecnologia de ponta com estratégia empresarial para entregar resultados reais e mensuráveis.</p>
+        </div>
+
+        <div class="services__grid">
+
+          <div class="service-card reveal">
+            <div class="service-card__icon">🤖</div>
+            <h3 class="service-card__title">Automações com IA</h3>
+            <p class="service-card__desc">Automatizamos fluxos operacionais completos — financeiro, RH, atendimento, logística — usando IA generativa e agentes autônomos.</p>
+            <ul class="service-card__list">
+              <li>Integração com ERP e CRM</li>
+              <li>Agentes de IA customizados</li>
+              <li>Redução de tarefas manuais</li>
+            </ul>
+            <a href="#contato" class="service-card__link">Saiba mais →</a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card__icon">💬</div>
+            <h3 class="service-card__title">Chatbots Empresariais</h3>
+            <p class="service-card__desc">Chatbots inteligentes treinados com a base de conhecimento da sua empresa, disponíveis 24/7 para vendas e suporte.</p>
+            <ul class="service-card__list">
+              <li>Integração com WhatsApp e web</li>
+              <li>Treinado no seu negócio</li>
+              <li>Atendimento sem interrupções</li>
+            </ul>
+            <a href="#contato" class="service-card__link">Saiba mais →</a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card__icon">📊</div>
+            <h3 class="service-card__title">Tráfego com IA</h3>
+            <p class="service-card__desc">Gestão inteligente de anúncios com otimização em tempo real via IA — mais conversões, menor custo por lead.</p>
+            <ul class="service-card__list">
+              <li>Google, Meta e LinkedIn Ads</li>
+              <li>Otimização automática de verbas</li>
+              <li>Relatórios preditivos com IA</li>
+            </ul>
+            <a href="#contato" class="service-card__link">Saiba mais →</a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card__icon">🎯</div>
+            <h3 class="service-card__title">Consultoria de IA</h3>
+            <p class="service-card__desc">Diagnóstico completo da sua operação, mapa de automações prioritárias e roadmap de implementação com ROI projetado.</p>
+            <ul class="service-card__list">
+              <li>Diagnóstico em 48 horas</li>
+              <li>Mapa de oportunidades</li>
+              <li>Roadmap executivo</li>
+            </ul>
+            <a href="#contato" class="service-card__link">Saiba mais →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         COMO FUNCIONA
+    ======================== -->
+    <section class="how-it-works" id="como-funciona">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="section-tag">Processo</span>
+          <h2 class="section-title">Do zero aos <span class="text-cyan">resultados</span> em 3 passos</h2>
+          <p class="section-sub">Um método testado em mais de 200 implementações para garantir resultados rápidos e sustentáveis.</p>
+        </div>
+
+        <div class="steps">
+
+          <div class="step reveal">
+            <div class="step__number">01</div>
+            <div class="step__content">
+              <h3 class="step__title">Diagnóstico</h3>
+              <p class="step__desc">Mapeamos todos os processos da sua empresa e identificamos onde a IA gera mais impacto. Em 48 horas você recebe um relatório completo com ROI projetado.</p>
+              <div class="step__tags">
+                <span>Análise de processos</span>
+                <span>Mapa de oportunidades</span>
+                <span>ROI projetado</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="step__connector reveal"></div>
+
+          <div class="step reveal">
+            <div class="step__number">02</div>
+            <div class="step__content">
+              <h3 class="step__title">Implementação</h3>
+              <p class="step__desc">Nossa equipe implementa as automações de forma ágil, integrada aos sistemas que você já usa. Acompanhamento diário até o go-live completo.</p>
+              <div class="step__tags">
+                <span>Desenvolvimento ágil</span>
+                <span>Integração nativa</span>
+                <span>Testes rigorosos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="step__connector reveal"></div>
+
+          <div class="step reveal">
+            <div class="step__number">03</div>
+            <div class="step__content">
+              <h3 class="step__title">Resultados</h3>
+              <p class="step__desc">Você começa a ver os resultados ainda nos primeiros 30 dias. Relatórios automáticos, dashboards em tempo real e suporte contínuo garantido.</p>
+              <div class="step__tags">
+                <span>Dashboard em tempo real</span>
+                <span>Relatórios automáticos</span>
+                <span>Suporte contínuo</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         STATS / NÚMEROS
+    ======================== -->
+    <section class="stats" id="numeros">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="section-tag section-tag--light">Resultados</span>
+          <h2 class="section-title section-title--light">Números que <span class="text-cyan">provam</span> o impacto</h2>
+        </div>
+
+        <div class="stats__grid">
+
+          <div class="stat-item reveal">
+            <div class="stat-item__icon">💰</div>
+            <div class="stat-item__number">
+              <span class="counter" data-target="60" data-suffix="%">0%</span>
+            </div>
+            <div class="stat-item__label">Redução média de custos operacionais</div>
+          </div>
+
+          <div class="stat-item reveal">
+            <div class="stat-item__icon">⚡</div>
+            <div class="stat-item__number">
+              <span class="counter" data-prefix="+" data-target="200" data-suffix="">+0</span>
+            </div>
+            <div class="stat-item__label">Automações entregues com sucesso</div>
+          </div>
+
+          <div class="stat-item reveal">
+            <div class="stat-item__icon">📅</div>
+            <div class="stat-item__number">
+              <span class="counter" data-target="30" data-suffix=" dias">0 dias</span>
+            </div>
+            <div class="stat-item__label">Prazo médio de implementação</div>
+          </div>
+
+          <div class="stat-item reveal">
+            <div class="stat-item__icon">🏆</div>
+            <div class="stat-item__number">
+              <span class="counter" data-target="98" data-suffix="%">0%</span>
+            </div>
+            <div class="stat-item__label">Índice de satisfação dos clientes</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         CASES / DEPOIMENTOS
+    ======================== -->
+    <section class="cases" id="cases">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="section-tag">Depoimentos</span>
+          <h2 class="section-title">O que nossos <span class="text-blue">clientes dizem</span></h2>
+          <p class="section-sub">Empresas de setores diferentes, resultados extraordinários em comum.</p>
+        </div>
+
+        <div class="cases__grid">
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">"Implementamos um chatbot para agendamento e atendimento. Em 2 meses, reduzimos 70% das chamadas para a recepção e aumentamos o agendamento online em 3x. Resultado incrível."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">DR</div>
+              <div class="testimonial-card__info">
+                <strong>Dr. Ricardo Almeida</strong>
+                <span>CEO — Clínica Almeida & Saúde</span>
+              </div>
+            </div>
+            <div class="testimonial-card__tag">🏥 Saúde</div>
+          </div>
+
+          <div class="testimonial-card testimonial-card--featured reveal">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">"A automação do nosso funil de vendas com IA foi transformadora. O time de marketing passou a focar em estratégia, enquanto a IA qualifica leads, envia ofertas e faz follow-up sozinha. ROI de 4x no primeiro trimestre."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">CM</div>
+              <div class="testimonial-card__info">
+                <strong>Carolina Menezes</strong>
+                <span>Diretora de Marketing — Loja Viva E-commerce</span>
+              </div>
+            </div>
+            <div class="testimonial-card__tag">🛒 E-commerce</div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">"Automatizamos toda a triagem e qualificação de leads imobiliários. O chatbot da Turbo faz a qualificação inicial, agenda visitas e nutre o cliente até ele estar pronto para comprar. Fantástico."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">FT</div>
+              <div class="testimonial-card__info">
+                <strong>Felipe Torres</strong>
+                <span>Sócio-Diretor — Torres Imóveis Premium</span>
+              </div>
+            </div>
+            <div class="testimonial-card__tag">🏢 Imobiliária</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         SOBRE
+    ======================== -->
+    <section class="about" id="sobre">
+      <div class="container about__inner">
+
+        <div class="about__text reveal">
+          <span class="section-tag">Sobre nós</span>
+          <h2 class="section-title">A agência que <span class="text-blue">entrega IA</span> de verdade</h2>
+          <p>A Turbo Marketing nasceu da frustração de ver empresas pagando caro por soluções genéricas que não funcionam na prática. Reunimos engenheiros de IA, especialistas em automação e estrategistas de negócio para criar uma agência diferente: focada em resultado real, implementação ágil e tecnologia que realmente funciona.</p>
+          <p>Somos especialistas em transformar operações complexas em fluxos inteligentes e automatizados. Cada projeto começa com diagnóstico profundo e termina apenas quando o cliente vê o ROI esperado.</p>
+        </div>
+
+        <div class="about__differentials reveal">
+          <h3>Por que somos diferentes</h3>
+          <ul class="differentials-list">
+            <li>
+              <span class="diff-icon">⚡</span>
+              <div>
+                <strong>Velocidade de entrega</strong>
+                <p>Primeiros resultados em até 30 dias — não em trimestres.</p>
+              </div>
+            </li>
+            <li>
+              <span class="diff-icon">🎯</span>
+              <div>
+                <strong>Foco em ROI</strong>
+                <p>Cada automação é projetada com retorno financeiro mensurável.</p>
+              </div>
+            </li>
+            <li>
+              <span class="diff-icon">🔒</span>
+              <div>
+                <strong>Segurança e conformidade</strong>
+                <p>Implementações seguras, LGPD-compliant e auditáveis.</p>
+              </div>
+            </li>
+            <li>
+              <span class="diff-icon">🤝</span>
+              <div>
+                <strong>Suporte contínuo</strong>
+                <p>Time dedicado pós-implementação para garantir evolução contínua.</p>
+              </div>
+            </li>
+            <li>
+              <span class="diff-icon">🧠</span>
+              <div>
+                <strong>IA de ponta</strong>
+                <p>Usamos os melhores modelos: GPT-4, Claude, Gemini e modelos open-source.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================
+         CTA FINAL / CONTATO
+    ======================== -->
+    <section class="contact" id="contato">
+      <div class="container contact__inner">
+
+        <div class="contact__info reveal">
+          <span class="section-tag section-tag--light">Vamos conversar</span>
+          <h2 class="section-title section-title--light">Pronto para <span class="text-cyan">automatizar</span> seu negócio?</h2>
+          <p class="contact__sub">Preencha o formulário e nossa equipe entra em contato em até <strong>2 horas</strong> para agendar seu diagnóstico gratuito.</p>
+
+          <div class="contact__bullets">
+            <div class="contact__bullet">✅ Diagnóstico gratuito de 48h</div>
+            <div class="contact__bullet">✅ Sem compromisso de contratação</div>
+            <div class="contact__bullet">✅ ROI projetado antes do início</div>
+            <div class="contact__bullet">✅ Implementação em até 30 dias</div>
+          </div>
+        </div>
+
+        <div class="contact__form-wrap reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="nome">Nome completo *</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label for="empresa">Empresa *</label>
+              <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa" required />
+            </div>
+            <div class="form-group">
+              <label for="whatsapp">WhatsApp *</label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required />
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Como podemos ajudar?</label>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva brevemente seu maior desafio operacional..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--cyan btn--full btn--lg">
+              <span>Quero meu Diagnóstico Gratuito ⚡</span>
+            </button>
+            <p class="form-privacy">🔒 Seus dados estão seguros. Não fazemos spam.</p>
+          </form>
+
+          <!-- Mensagem de sucesso -->
+          <div class="form-success" id="formSuccess">
+            <div class="form-success__icon">⚡</div>
+            <h3>Mensagem enviada!</h3>
+            <p>Nossa equipe entrará em contato em até 2 horas. Fique de olho no seu WhatsApp!</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================
+       FOOTER
+  ======================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <a href="#hero" class="header__logo">
+          <span class="logo-icon">⚡</span>
+          <span class="logo-text">TURBO <span class="logo-accent">MARKETING</span></span>
+        </a>
+        <p>Especialistas em IA & Automações para empresas que querem crescer sem aumentar custos.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="LinkedIn" class="social-link">in</a>
+          <a href="#" aria-label="Instagram" class="social-link">ig</a>
+          <a href="#" aria-label="YouTube" class="social-link">yt</a>
+          <a href="#" aria-label="WhatsApp" class="social-link">wa</a>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#servicos">Automações com IA</a></li>
+          <li><a href="#servicos">Chatbots Empresariais</a></li>
+          <li><a href="#servicos">Tráfego com IA</a></li>
+          <li><a href="#servicos">Consultoria de IA</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#cases">Cases</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:contato@turbomarketing.ai">contato@turbomarketing.ai</a></li>
+          <li><a href="tel:+553131813915">(31) 3181-3915</a></li>
+          <li>São Paulo, SP — Brasil</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2025 Turbo Marketing. Todos os direitos reservados.</p>
+        <p>CNPJ: 63.575.464/0001-46 — Política de Privacidade</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
